@@ -1,0 +1,32 @@
+<div>
+  <h1>One way data bindings</h1>
+  <h4>1.String Interpolation Binding : {{ name }}</h4>
+  <h4>
+    2.Property Binding :
+    <button [disabled]="isDisabled">Click me!</button> &nbsp;
+    <input [value]="text" />
+  </h4>
+  <h4>3.Event binding :<button (click)="onSubmit()">Submit</button></h4>
+  <h1>Two way data binding</h1>
+  <h4>1. <input [(ngModel)]="textInput" /></h4>
+  <p>Your name is: {{ textInput }}</p>
+  <h1>Style data binding</h1>
+  <h4>
+    1. <span [style.font-size.px]="fontSize">Hello, world!</span>
+    <button (click)="increaseFontSize()">IncreaseFontSize</button> &nbsp;<button
+      (click)="decreaseFontSize()"
+    >
+      DecreaseFontSize
+    </button>
+  </h4>
+  <span [style.border]="hasBorder ? '1px solid black' : ''">Hello, world!</span>
+  <br />
+  <br />
+  <button
+    [style.background-color]="isHovered ? 'green' : 'yellow'"
+    (mouseover)="isHovered = true"
+    (mouseout)="isHovered = false"
+  >
+    Hover me!
+  </button>
+</div>
