@@ -1,1 +1,25 @@
-<p>directives works!</p>
+<h3>Directive are 4 types</h3>
+<ol style="display: flex">
+  <li>Component Directives</li>
+  <li>Structural Directives</li>
+  <li>Attribute Directives</li>
+  <li>Custom Directives</li>
+</ol>
+
+<h4>Structural Directives *ngIf & *ngFor</h4>
+<p *ngIf="buttonHide">Content Hide & Show *ngIf Directive Example</p>
+<button (click)="buttonClicked()">*ngIf Click Event</button>
+
+<h5>
+  Users List:
+  <span>*ngFor Directive Example</span>
+</h5>
+<ul>
+  <li *ngFor="let user of users; let i = index">
+    {{ i + 1 }} - {{ user.name }} - {{ user.email }}
+  </li>
+</ul>
+
+<h5>Attribute Directive</h5>
+
+<span highLight highlightColor="green"  >This paragraph will be highlighted in green.</span>

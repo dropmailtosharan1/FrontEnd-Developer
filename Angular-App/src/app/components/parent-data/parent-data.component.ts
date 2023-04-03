@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentDataComponent implements OnInit {
 
+  
+  message='';
+
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  receiveMessage(event:any) {
+    this.message = event;
+  }
 }

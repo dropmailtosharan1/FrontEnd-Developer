@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-first-user',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstUserComponent implements OnInit {
 
+  @Input() myValProp: string='';
+  propChanges: any;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  ngOnChanges(changes: SimpleChanges) {
+    this.propChanges = changes;
+    console.log(this.propChanges);
+  }
 }
