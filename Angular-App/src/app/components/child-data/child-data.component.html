@@ -3,3 +3,31 @@
 <p>{{message}}</p>
 
 <button (click)="sendMessage()">Send Message</button>
+
+<h2>Json-server data using Services</h2>
+
+<h4>Users Data</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td><input type="text" [(ngModel)]="user.name"></td>
+      <td><input type="text" [(ngModel)]="user.email"></td>
+      <td>
+        <button (click)="updateUser(user)">Update</button>
+        <button (click)="deleteUser(user.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<button (click)="addUser()">Add User</button>

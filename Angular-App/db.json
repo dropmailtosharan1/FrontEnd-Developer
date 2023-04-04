@@ -15,5 +15,37 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Hamne",
+      "email": "hamne@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Jane ee",
+      "email": "jane@example.com"
+    },
+    {
+      "name": "knoee",
+      "email": "knoee@example.com",
+      "id": 3
+    },
+    {
+      "name": "Mansh",
+      "email": "mansh@example.com",
+      "id": 4
+    },
+    {
+      "name": "Karnaw",
+      "email": "karnaw@example.com",
+      "id": 5
+    },
+    {
+      "name": "Rankath",
+      "email": "rankath@example.com",
+      "id": 6
+    }
+  ]
 }
